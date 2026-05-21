@@ -1,15 +1,15 @@
 import json
 import os
-import google.generativeai as genai
+import time
+from google import genai
 
-_model = None
+_client = None
 
-def _get_model():
-    global _model
-    if _model is None:
-        genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-        _model = genai.GenerativeModel("gemini-2.0-flash")
-    return _model
+def _get_client():
+    global _client
+    if _client is None:
+        _client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    return _client
 
 PROMPT = """You are a news summarizer.
 
@@ -28,11 +28,12 @@ Summary: {summary}
 def summarize(title: str, rss_summary: str) -> dict:
     """Returns {'summary': str, 'tags': list[str]}. Falls back gracefully on errors."""
     try:
-        resp = _get_model().generate_content(
-            PROMPT.format(title=title or "", summary=(rss_summary or "")[:2000])
+        time.sleep(4)
+        resp = _get_client().models.generate_content(
+            model="gemini-2.0-flash",
+            contents=PROMPT.format(title=title or "", summary=(rss_summary or "")[:2000]),
         )
         text = resp.text.strip()
-        # Strip accidental code fences
         if text.startswith("```"):
             text = text.strip("`")
             if text.startswith("json"):

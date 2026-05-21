@@ -1,0 +1,63 @@
+/Users/gurdeepsingh/Desktop/learning/news-claw/fetcher/llm.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+2026-05-18 15:01:55,581 INFO Fetching WSJ
+2026-05-18 15:01:55,990 INFO WSJ: +3 rows
+2026-05-18 15:01:55,993 INFO Fetching Fox News
+2026-05-18 15:01:56,664 INFO Fox News: +5 rows
+2026-05-18 15:01:56,665 INFO Fetching NY Times
+2026-05-18 15:01:57,175 INFO NY Times: +4 rows
+2026-05-18 15:01:57,176 INFO Fetching The Hindu
+2026-05-18 15:01:57,819 INFO The Hindu: +5 rows
+2026-05-18 15:01:57,820 INFO Fetching Times of India
+2026-05-18 15:01:58,324 INFO Times of India: +4 rows
+2026-05-18 15:01:58,324 INFO Fetching NDTV
+2026-05-18 15:01:59,113 INFO NDTV: +5 rows
+2026-05-18 15:01:59,115 INFO Fetching Toronto Sun
+2026-05-18 15:01:59,753 INFO Toronto Sun: +5 rows
+2026-05-18 15:01:59,754 INFO Fetching National Post
+2026-05-18 15:02:00,418 INFO National Post: +2 rows
+2026-05-18 15:02:00,420 INFO Fetching The Star
+2026-05-18 15:02:00,782 INFO The Star: +2 rows
+2026-05-18 15:02:00,783 INFO Done. ok=9 fail=0 added=35
+2026-05-19 22:48:33,432 INFO Fetching WSJ
+2026-05-19 22:48:33,762 INFO WSJ: +0 rows
+2026-05-19 22:48:33,764 INFO Fetching Fox News
+2026-05-19 22:48:37,969 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:38,098 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:48:38,101 INFO Fox News: +1 rows
+2026-05-19 22:48:38,103 INFO Fetching NY Times
+2026-05-19 22:48:42,287 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:42,392 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:48:42,395 INFO NY Times: +1 rows
+2026-05-19 22:48:42,397 INFO Fetching The Hindu
+2026-05-19 22:48:42,877 INFO The Hindu: +0 rows
+2026-05-19 22:48:42,877 INFO Fetching Times of India
+2026-05-19 22:48:46,986 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:47,075 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:48:47,076 INFO Times of India: +1 rows
+2026-05-19 22:48:47,076 INFO Fetching NDTV
+2026-05-19 22:48:51,292 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:51,392 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:48:55,413 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:55,496 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:48:59,534 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:48:59,630 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:49:03,670 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:49:03,749 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:49:07,825 INFO AFC is enabled with max remote calls: 10.
+2026-05-19 22:49:07,909 INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-19 22:49:07,911 INFO NDTV: +5 rows
+2026-05-19 22:49:07,912 INFO Fetching Toronto Sun
+2026-05-19 22:49:08,071 INFO Toronto Sun: +0 rows
+2026-05-19 22:49:08,071 INFO Fetching National Post
+2026-05-19 22:49:08,335 INFO National Post: +0 rows
+2026-05-19 22:49:08,335 INFO Fetching The Star
+2026-05-19 22:49:08,428 INFO The Star: +0 rows
+2026-05-19 22:49:08,428 INFO Done. ok=9 fail=0 added=8

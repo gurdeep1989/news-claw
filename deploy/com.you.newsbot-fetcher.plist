@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.you.newsbot-fetcher</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/gurdeepsingh/Desktop/learning/news-claw/.venv/bin/python</string>
+    <string>-m</string>
+    <string>fetcher.fetch</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/gurdeepsingh/Desktop/learning/news-claw</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/gurdeepsingh/Desktop/learning/news-claw/.venv/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>StartInterval</key>
+  <integer>7200</integer>           <!-- every 2 hours -->
+
+  <key>RunAtLoad</key>
+  <true/>                           <!-- run once on load -->
+
+  <key>StandardOutPath</key>
+  <string>/Users/gurdeepsingh/Desktop/learning/news-claw/data/fetcher.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/gurdeepsingh/Desktop/learning/news-claw/data/fetcher.err.log</string>
+</dict>
+</plist>
