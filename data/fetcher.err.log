@@ -61,3 +61,22 @@ https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/READM
 2026-05-19 22:49:08,335 INFO Fetching The Star
 2026-05-19 22:49:08,428 INFO The Star: +0 rows
 2026-05-19 22:49:08,428 INFO Done. ok=9 fail=0 added=8
+2026-05-21 20:25:47,128 INFO Fetching WSJ
+2026-05-21 20:25:47,224 INFO WSJ: +0 rows
+2026-05-21 20:25:47,224 INFO Fetching Fox News
+2026-05-21 20:25:47,394 INFO Fox News: +0 rows
+2026-05-21 20:25:47,394 INFO Fetching NY Times
+2026-05-21 20:25:47,464 INFO NY Times: +0 rows
+2026-05-21 20:25:47,465 INFO Fetching The Hindu
+2026-05-21 20:25:47,530 INFO The Hindu: +0 rows
+2026-05-21 20:25:47,530 INFO Fetching Times of India
+2026-05-21 20:25:47,709 INFO Times of India: +0 rows
+2026-05-21 20:25:47,710 INFO Fetching NDTV
+2026-05-21 20:25:48,117 INFO NDTV: +0 rows
+2026-05-21 20:25:48,117 INFO Fetching Toronto Sun
+2026-05-21 20:25:48,343 INFO Toronto Sun: +0 rows
+2026-05-21 20:25:48,343 INFO Fetching National Post
+2026-05-21 20:25:48,805 INFO National Post: +0 rows
+2026-05-21 20:25:48,805 INFO Fetching The Star
+2026-05-21 20:25:48,879 WARNING The Star failed: parse error: <unknown>:2:0: syntax error
+2026-05-21 20:25:48,879 INFO Done. ok=8 fail=1 added=0

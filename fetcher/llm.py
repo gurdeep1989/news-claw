@@ -1,15 +1,7 @@
 import json
-import os
-import time
-from google import genai
+import ollama
 
-_client = None
-
-def _get_client():
-    global _client
-    if _client is None:
-        _client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    return _client
+MODEL = "llama3.2:3b"
 
 PROMPT = """You are a news summarizer.
 
@@ -28,16 +20,15 @@ Summary: {summary}
 def summarize(title: str, rss_summary: str) -> dict:
     """Returns {'summary': str, 'tags': list[str]}. Falls back gracefully on errors."""
     try:
-        time.sleep(4)
-        resp = _get_client().models.generate_content(
-            model="gemini-2.0-flash",
-            contents=PROMPT.format(title=title or "", summary=(rss_summary or "")[:2000]),
+        resp = ollama.generate(
+            model=MODEL,
+            prompt=PROMPT.format(title=title or "", summary=(rss_summary or "")[:2000]),
         )
-        text = resp.text.strip()
-        if text.startswith("```"):
-            text = text.strip("`")
-            if text.startswith("json"):
-                text = text[4:]
+        text = resp["response"].strip()
+        # Extract JSON object robustly in case model adds extra prose
+        start, end = text.find("{"), text.rfind("}")
+        if start != -1 and end != -1:
+            text = text[start:end + 1]
         data = json.loads(text)
         return {
             "summary": str(data.get("summary", ""))[:500],
