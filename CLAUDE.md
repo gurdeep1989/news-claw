@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**news-claw** is a news aggregator that fetches RSS feeds from US/India/Canada outlets every 2 hours, enriches each article with a Gemini-generated summary and topic tags, persists everything to a local SQLite database, and exposes a CLI skill for querying the stored news.
+**news-claw** is a news aggregator that fetches RSS feeds from US/India/Canada outlets every 2 hours, enriches each article with a locally-run LLM summary and topic tags, persists everything to a local SQLite database, and exposes a CLI skill for querying the stored news.
 
 It runs as a macOS LaunchAgent background service.
 
@@ -21,8 +21,36 @@ The real env file lives at `~/.config/news-claw/.env` (not in the project root).
 | Variable | Purpose |
 |---|---|
 | `NEWS_DB_PATH` | Absolute path to the SQLite file (e.g. `~/.local/share/news-claw/news.db`) |
-| `GEMINI_API_KEY` | Google Gemini API key used by `llm.py` |
 | `MAX_ITEMS_PER_FEED` | Optional, default `20` |
+
+LLM summarization runs locally via **Ollama** (`llama3.2:3b`). No API key needed.
+
+### Ollama setup (one-time)
+
+```bash
+# Install Ollama
+brew install ollama
+
+# Pull the model (~2GB download)
+ollama pull llama3.2:3b
+
+# Verify it's available
+ollama list
+```
+
+### Running Ollama
+
+Ollama must be running before the fetcher starts:
+
+```bash
+ollama serve
+```
+
+If you see `address already in use`, Ollama is already running — nothing to do. To check:
+
+```bash
+ollama ps
+```
 
 ## Running
 
@@ -42,7 +70,7 @@ fetcher/
   feeds.py    # Static list of FEEDS dicts: {news_outlet, url, country}
   fetch.py    # Entry point: iterates FEEDS, calls llm.summarize, writes via db
   db.py       # sqlite3 helpers: connect (WAL mode), insert_article, link_exists, fetch_run ctx manager
-  llm.py      # Calls Gemini 2.0 Flash to produce {summary, tags} per article
+  llm.py      # Calls local Ollama (llama3.2:3b) to produce {summary, tags} per article
 
 sql/
   001_init.sql  # Applied by db.connect — creates articles and fetch_runs tables
