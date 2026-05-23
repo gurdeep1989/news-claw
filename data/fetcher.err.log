@@ -80,3 +80,86 @@ https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/READM
 2026-05-21 20:25:48,805 INFO Fetching The Star
 2026-05-21 20:25:48,879 WARNING The Star failed: parse error: <unknown>:2:0: syntax error
 2026-05-21 20:25:48,879 INFO Done. ok=8 fail=1 added=0
+2026-05-23 13:52:44,452 INFO Fetching WSJ
+2026-05-23 13:52:44,520 INFO WSJ: +0 rows
+2026-05-23 13:52:44,520 INFO Fetching Fox News
+2026-05-23 13:52:45,629 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:45,995 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:45,997 INFO Fox News: +2 rows
+2026-05-23 13:52:45,998 INFO Fetching NY Times
+2026-05-23 13:52:46,120 INFO NY Times: +0 rows
+2026-05-23 13:52:46,120 INFO Fetching The Hindu
+2026-05-23 13:52:46,935 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:47,171 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:47,532 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:47,872 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:48,270 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:48,272 INFO The Hindu: +5 rows
+2026-05-23 13:52:48,273 INFO Fetching Times of India
+2026-05-23 13:52:48,838 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:48,839 INFO Times of India: +1 rows
+2026-05-23 13:52:48,841 INFO Fetching NDTV
+2026-05-23 13:52:49,453 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:49,739 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:50,074 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:50,360 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:50,668 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:50,669 INFO NDTV: +5 rows
+2026-05-23 13:52:50,671 INFO Fetching Toronto Sun
+2026-05-23 13:52:51,456 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 13:52:51,457 INFO Toronto Sun: +1 rows
+2026-05-23 13:52:51,458 INFO Fetching National Post
+2026-05-23 13:52:51,644 INFO National Post: +0 rows
+2026-05-23 13:52:51,644 INFO Fetching The Star
+2026-05-23 13:52:51,750 WARNING The Star failed: parse error: <unknown>:2:0: syntax error
+2026-05-23 13:52:51,751 INFO Done. ok=8 fail=1 added=14
+2026-05-23 16:44:55,253 INFO Fetching WSJ
+2026-05-23 16:44:56,299 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:56,633 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:56,635 INFO WSJ: +2 rows
+2026-05-23 16:44:56,641 INFO Fetching Fox News
+2026-05-23 16:44:57,271 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:57,666 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:57,971 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:58,312 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:58,621 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:58,623 INFO Fox News: +5 rows
+2026-05-23 16:44:58,624 INFO Fetching NY Times
+2026-05-23 16:44:59,254 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:44:59,812 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:00,210 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:00,211 INFO NY Times: +3 rows
+2026-05-23 16:45:00,212 INFO Fetching The Hindu
+2026-05-23 16:45:00,731 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:01,115 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:01,461 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:01,752 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:02,106 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:02,107 INFO The Hindu: +5 rows
+2026-05-23 16:45:02,108 INFO Fetching Times of India
+2026-05-23 16:45:02,614 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:03,107 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:03,487 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:03,492 INFO Times of India: +3 rows
+2026-05-23 16:45:03,493 INFO Fetching NDTV
+2026-05-23 16:45:04,134 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:04,552 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:04,882 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:05,157 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:05,474 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:05,475 INFO NDTV: +5 rows
+2026-05-23 16:45:05,477 INFO Fetching Toronto Sun
+2026-05-23 16:45:06,067 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:06,417 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:06,735 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:07,067 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:07,435 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:07,436 INFO Toronto Sun: +5 rows
+2026-05-23 16:45:07,436 INFO Fetching National Post
+2026-05-23 16:45:08,643 INFO National Post: +0 rows
+2026-05-23 16:45:08,643 INFO Fetching The Star
+2026-05-23 16:45:09,390 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:09,749 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:10,126 INFO HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-23 16:45:10,127 INFO The Star: +3 rows
+2026-05-23 16:45:10,128 INFO Done. ok=9 fail=0 added=31
